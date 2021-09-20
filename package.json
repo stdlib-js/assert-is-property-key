@@ -43,9 +43,12 @@
     "@stdlib/types": "^0.0.x"
   },
   "devDependencies": {
+    "@stdlib/assert-has-symbol-support": "^0.0.x",
     "@stdlib/assert-is-boolean": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
+    "@stdlib/number-ctor": "^0.0.x",
     "@stdlib/symbol-ctor": "^0.0.x",
+    "@stdlib/symbol-iterator": "^0.0.x",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-spec": "5.x.x"
