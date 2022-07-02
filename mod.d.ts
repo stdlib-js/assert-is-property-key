@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,28 +16,39 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
 /**
-* Test whether a value is a property key.
+* Tests whether a value is a property key.
 *
-* @module @stdlib/assert-is-property-key
+* ## Notes
+*
+* -   A property key is either a string, symbol, or a nonnegative integer.
+*
+* @param value - value to test
+* @returns boolean indicating whether value is a property key
 *
 * @example
-* var isPropertyKey = require( '@stdlib/assert-is-property-key' );
-*
 * var bool = isPropertyKey( 'beep' );
 * // returns true
 *
-* bool = isPropertyKey( {} );
+* @example
+* var bool = isPropertyKey( 37 );
+* // returns true
+*
+* @example
+* var bool = isPropertyKey( {} );
+* // returns false
+*
+* @example
+* var bool = isPropertyKey( [] );
 * // returns false
 */
-
-// MODULES //
-
-var isPropertyKey = require( './main.js' );
+declare function isPropertyKey( value: any ): boolean;
 
 
 // EXPORTS //
 
-module.exports = isPropertyKey;
+export = isPropertyKey;
