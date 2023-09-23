@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isPropertyKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@esm/index.mjs';
+import isPropertyKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@v0.1.0-esm/index.mjs';
 ```
 
 #### isPropertyKey( value )
@@ -100,7 +100,7 @@ bool = isPropertyKey( 3.14 );
 
 import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@esm/index.mjs';
 import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@esm/index.mjs';
-import isPropertyKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@esm/index.mjs';
+import isPropertyKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@v0.1.0-esm/index.mjs';
 
 var hasSymbols = hasSymbolSupport();
 var bool = isPropertyKey( 'beep' );
