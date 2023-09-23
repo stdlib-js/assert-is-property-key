@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isPropertyKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-property-key/tags). For example,
+
+```javascript
 import isPropertyKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@v0.1.0-esm/index.mjs';
 ```
 
@@ -100,7 +105,7 @@ bool = isPropertyKey( 3.14 );
 
 import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@esm/index.mjs';
 import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@esm/index.mjs';
-import isPropertyKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@v0.1.0-esm/index.mjs';
+import isPropertyKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@esm/index.mjs';
 
 var hasSymbols = hasSymbolSupport();
 var bool = isPropertyKey( 'beep' );
