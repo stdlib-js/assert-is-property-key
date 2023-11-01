@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,67 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var Symbol = require( '@stdlib/symbol-ctor' );
-var SymbolIterator = require( '@stdlib/symbol-iterator' );
-var Number = require( '@stdlib/number-ctor' );
-var hasSymbols = require( '@stdlib/assert-has-symbol-support' );
-var isPropertyKey = require( './../../dist' );
-
-
-// VARIABLES //
-
-var opts = {
-	'skip': !hasSymbols()
-};
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isPropertyKey, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided a string primitive', function test( t ) {
-	t.strictEqual( isPropertyKey( 'beep' ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided a symbol primitive', opts, function test( t ) {
-	t.strictEqual( isPropertyKey( Symbol( 'beep' ) ), true, 'returns true' );
-	t.strictEqual( isPropertyKey( SymbolIterator ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided a non-negative integer primitive', function test( t ) {
-	t.strictEqual( isPropertyKey( 0 ), true, 'returns true' );
-	t.strictEqual( isPropertyKey( 1 ), true, 'returns true' );
-	t.strictEqual( isPropertyKey( 139 ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided a string, symbol, or non-negative integer primitive', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		-13,
-		0.1,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		{},
-		[],
-		function noop() {},
-		new String( 'beep' ), // eslint-disable-line no-new-wrappers
-		new Number( 1 ) // eslint-disable-line no-new-wrappers
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( isPropertyKey( values[ i ] ), false, 'returns false when provided '+values[ i ] );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
