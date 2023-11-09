@@ -45,38 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-property-key
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isPropertyKey = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isPropertyKey = require( 'path/to/vendor/umd/assert-is-property-key/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isPropertyKey;
-})();
-</script>
+var isPropertyKey = require( '@stdlib/assert-is-property-key' );
 ```
 
 #### isPropertyKey( value )
@@ -116,15 +108,10 @@ bool = isPropertyKey( 3.14 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Symbol = require( '@stdlib/symbol-ctor' );
+var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
+var isPropertyKey = require( '@stdlib/assert-is-property-key' );
 
 var hasSymbols = hasSymbolSupport();
 var bool = isPropertyKey( 'beep' );
@@ -145,11 +132,6 @@ bool = isPropertyKey( {} );
 
 bool = isPropertyKey( [] );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -167,6 +149,16 @@ bool = isPropertyKey( [] );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-string`][@stdlib/assert/is-string]</span><span class="delimiter">: </span><span class="description">test if a value is a string.</span>
+-   <span class="package-name">[`@stdlib/assert-is-symbol`][@stdlib/assert/is-symbol]</span><span class="delimiter">: </span><span class="description">test if a value is a symbol.</span>
+-   <span class="package-name">[`@stdlib/assert-is-nonnegative-integer`][@stdlib/assert/is-nonnegative-integer]</span><span class="delimiter">: </span><span class="description">test if a value is a number having a nonnegative integer value.</span>
+-   <span class="package-name">[`@stdlib/assert-has-own-property`][@stdlib/assert/has-own-property]</span><span class="delimiter">: </span><span class="description">test if an object has a specified property.</span>
+-   <span class="package-name">[`@stdlib/assert-has-property`][@stdlib/assert/has-property]</span><span class="delimiter">: </span><span class="description">test if an object has a specified property, either own or inherited.</span>
 
 </section>
 
@@ -240,6 +232,20 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/assert-is-property-key/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-property-key/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-string]: https://github.com/stdlib-js/assert-is-string
+
+[@stdlib/assert/is-symbol]: https://github.com/stdlib-js/assert-is-symbol
+
+[@stdlib/assert/is-nonnegative-integer]: https://github.com/stdlib-js/assert-is-nonnegative-integer
+
+[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property
+
+[@stdlib/assert/has-property]: https://github.com/stdlib-js/assert-has-property
+
+<!-- </related-links> -->
 
 </section>
 
