@@ -40,12 +40,12 @@
     "@stdlib/assert-is-nonnegative-integer": "^0.1.0",
     "@stdlib/assert-is-string": "^0.1.1",
     "@stdlib/assert-is-symbol": "^0.1.1",
-    "@stdlib/types": "^0.1.0"
+    "@stdlib/types": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/assert-has-symbol-support": "^0.1.1",
     "@stdlib/assert-is-boolean": "^0.1.1",
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.0",
     "@stdlib/number-ctor": "^0.1.1",
     "@stdlib/symbol-ctor": "^0.1.1",
     "@stdlib/symbol-iterator": "^0.1.1",

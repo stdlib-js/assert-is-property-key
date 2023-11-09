@@ -150,6 +150,16 @@ bool = isPropertyKey( [] );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-string`][@stdlib/assert/is-string]</span><span class="delimiter">: </span><span class="description">test if a value is a string.</span>
+-   <span class="package-name">[`@stdlib/assert-is-symbol`][@stdlib/assert/is-symbol]</span><span class="delimiter">: </span><span class="description">test if a value is a symbol.</span>
+-   <span class="package-name">[`@stdlib/assert-is-nonnegative-integer`][@stdlib/assert/is-nonnegative-integer]</span><span class="delimiter">: </span><span class="description">test if a value is a number having a nonnegative integer value.</span>
+-   <span class="package-name">[`@stdlib/assert-has-own-property`][@stdlib/assert/has-own-property]</span><span class="delimiter">: </span><span class="description">test if an object has a specified property.</span>
+-   <span class="package-name">[`@stdlib/assert-has-property`][@stdlib/assert/has-property]</span><span class="delimiter">: </span><span class="description">test if an object has a specified property, either own or inherited.</span>
+
 </section>
 
 <!-- /.related -->
@@ -222,6 +232,20 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/assert-is-property-key/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-property-key/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-string]: https://github.com/stdlib-js/assert-is-string
+
+[@stdlib/assert/is-symbol]: https://github.com/stdlib-js/assert-is-symbol
+
+[@stdlib/assert/is-nonnegative-integer]: https://github.com/stdlib-js/assert-is-nonnegative-integer
+
+[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property
+
+[@stdlib/assert/has-property]: https://github.com/stdlib-js/assert-has-property
+
+<!-- </related-links> -->
 
 </section>
 
