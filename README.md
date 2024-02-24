@@ -54,7 +54,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-isPropertyKey = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@umd/browser.js' )
+isPropertyKey = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@v0.2.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -66,7 +66,7 @@ var isPropertyKey = require( 'path/to/vendor/umd/assert-is-property-key/index.js
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@v0.2.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -122,7 +122,7 @@ bool = isPropertyKey( 3.14 );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-property-key@v0.2.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
