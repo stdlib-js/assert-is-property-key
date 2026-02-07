@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-property-key",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Test whether a value is a property key.",
   "license": "Apache-2.0",
   "author": {
@@ -43,10 +43,10 @@
     "@stdlib/types": "^0.4.3"
   },
   "devDependencies": {
-    "@stdlib/assert-has-symbol-support": "^0.2.2",
+    "@stdlib/assert-has-symbol-support": "^0.2.3",
     "@stdlib/assert-is-boolean": "^0.2.2",
-    "@stdlib/number-ctor": "^0.2.2",
-    "@stdlib/symbol-ctor": "^0.2.2",
+    "@stdlib/number-ctor": "^0.2.3",
+    "@stdlib/symbol-ctor": "^0.2.3",
     "@stdlib/symbol-iterator": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
