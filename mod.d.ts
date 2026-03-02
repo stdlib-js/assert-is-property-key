@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,16 +16,9 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
-
-var isString = require( '@stdlib/assert-is-string' ).isPrimitive;
-var isSymbol = require( '@stdlib/assert-is-symbol' ).isPrimitive;
-var isNonNegativeInteger = require( '@stdlib/assert-is-nonnegative-integer' ).isPrimitive;
-
-
-// MAIN //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
 /**
 * Tests whether a value is a property key.
@@ -34,8 +27,8 @@ var isNonNegativeInteger = require( '@stdlib/assert-is-nonnegative-integer' ).is
 *
 * -   A property key is either a string, symbol, or a nonnegative integer.
 *
-* @param {*} value - value to test
-* @returns {boolean} boolean indicating whether value is a property key
+* @param value - value to test
+* @returns boolean indicating whether value is a property key
 *
 * @example
 * var bool = isPropertyKey( 'beep' );
@@ -53,15 +46,9 @@ var isNonNegativeInteger = require( '@stdlib/assert-is-nonnegative-integer' ).is
 * var bool = isPropertyKey( [] );
 * // returns false
 */
-function isPropertyKey( value ) {
-	return (
-		isString( value ) ||
-		isSymbol( value ) ||
-		isNonNegativeInteger( value )
-	);
-}
+declare function isPropertyKey( value: any ): value is PropertyKey;
 
 
 // EXPORTS //
 
-module.exports = isPropertyKey;
+export = isPropertyKey;
